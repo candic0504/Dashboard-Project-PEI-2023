@@ -124,9 +124,8 @@ En bref...
 
 Sources d’inspirations :
 
-https://www.uplabs.com/search?q=dashboard\
-https://dribbble.com/search?q=dashboard\
-https://artists.spotify.com/blog/introducing-spotify-fan-insights
+https://www.uplabs.com/search?q=dashboard <br/>
+https://dribbble.com/search?q=dashboard <br/>
 
 __Bon courage à tous !!__
 
