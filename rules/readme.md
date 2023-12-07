@@ -12,9 +12,9 @@ Ce produit doit leur permettre de visualiser le parc de capteurs en  circulation
 
 Le jeu de données fournis est composé de 3 collections Measures / Sensors / Users
 
-**Users** : répertorie l'ensemble des foyers où chaque capteur est en place
-**Sensors** : l'ensemble des capteurs (il y a plusieurs types de capteurs)
-**Measures** : les mesures de chaque capteur
+- **Users** : répertorie l'ensemble des foyers où chaque capteur est en place
+- **Sensors** : l'ensemble des capteurs (il y a plusieurs types de capteurs)
+- **Measures** : les mesures de chaque capteur
 
 L'entreprise n'a pas d'attente particulière sur les feature à implémenter, libre cours de faire les ateliers d'idéations et la recherche utilisateur nécessaire afin de comprendre les besoins de votre client. 
 --- 
