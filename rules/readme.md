@@ -3,7 +3,7 @@
 Les dashboards ou tableau de bords permettent d’avoir une vision claire et précise sur l’état d’un business, ou d’un service.
 Très employés de nos jours, ils constituent l’un des meilleurs moyens d’afficher de la data... mais également l’un des meilleurs moyens de mettre en avant vos talents de développeur WEB.
 
-## Context
+## Contexte
 
 L'entreprise P.E.IoT est une entreprise qui propose la vente de capteurs domotiques.<br/>
 Dans l'optique d'un projet de refonte de leur nouvelle application métier P.E.IoT fait un appel d'offre pour réaliser le POC de leur produit.
@@ -17,6 +17,7 @@ Le jeu de données fournis est composé de 3 collections Measures / Sensors / Us
 - **Measures** : les mesures de chaque capteur
 
 L'entreprise n'a pas d'attente particulière sur les feature à implémenter, libre cours de faire les ateliers d'idéations et la recherche utilisateur nécessaire afin de comprendre les besoins de votre client. 
+
 --- 
 
 [[_TOC_]]
@@ -33,7 +34,7 @@ Vous devez réaliser un minimum de 6 widgets différents en respectant les condi
 - Utiliser React. Chaque widget doit être un composant réutilisable.
 - Au moins un widget doit être un graphique. Vous pouvez utiliser la librairie du nom de [_Recharts_](https://recharts.org/en-US/) ou tout autre librairie de graphes disponible sur npm.
 - Les données affichées doivent provenir de 2 sources :
-    - Au moins une APIs distantes (Bibliothèque allociné, spotify, Riot games ...), le plus simple est d'incorporer un widget de metéo, et d'utiliser l'API de openweather que l'on connait déjà ou OMDBapi pour incorporer un des donnée liée à du cinéma.
+    - Au moins une APIs distantes (Bibliothèque allociné, spotify, Riot games ...), le plus simple est d'incorporer un widget de metéo, et d'utiliser l'API de openweather que l'on connait déjà ou OMDBapi pour incorporer une donnée liée à du contenu multimédia.
     - Une API que vous aurez réalisée (C.F. partie 2)
     
 Votre projet comporte au minimum 2 pages distinctes : 
