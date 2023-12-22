@@ -1,0 +1,23 @@
+/* Apid.css - Styles personnalisés en complément de Bootstrap */
+
+/* Ajoutez des styles personnalisés pour le widget météo qui ne sont pas couverts par Bootstrap */
+.weather-widget-custom {
+    background-color: #494848; /* Fond du widget personnalisé */
+    width: 200px; /* Largeur personnalisée pour le widget */
+    font-family: 'Arial', sans-serif; /* Police personnalisée pour le widget */
+  }
+  
+  /* Vous pouvez toujours utiliser les classes utilitaires de Bootstrap dans votre JSX */
+  /* Et ajouter des ajustements spécifiques ici si nécessaire */
+  
+  /* Par exemple, si vous avez besoin d'un style de bouton personnalisé non couvert par Bootstrap */
+  .weather-widget-custom button.custom-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .weather-widget-custom button.custom-button:hover {
+    background-color: #e0e0e0;
+  }
+  
