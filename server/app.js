@@ -1,54 +1,88 @@
-import { MongoClient } from 'mongodb'
+import express from 'express';
+import { MongoClient } from 'mongodb';
 
-// Assurez-vous que `client` est défini à ce niveau
+const app = express();
+const PORT = process.env.PORT || 3000;
+
 const uri = 'mongodb+srv://candice:identifier2023@dashboardproject.pqclvmy.mongodb.net/?retryWrites=true&w=majority';
 const client = new MongoClient(uri);
 
+app.use(express.json());
 
-//const data = await mongoClient.db().collection('DashboardProject').find({}).toArray();
-//console.log("!!!", data);
+//Changer avec Dashboard et user,measure,sensors
+//   http://localhost:3000/api/DashboardProject/users
 
-async function run() {
+app.post('/api/:dbName/:collectionName', async (req, res) => {
     try {
+        const { dbName, collectionName } = req.params;
         await client.connect();
-        console.log("Connecté à MongoDB");
-
-        // Ici, vous pouvez appeler les fonctions pour interagir avec votre base de données
-        await listDatabases(client);
-    
-        await getData(client, 'DashboardProject', 'users', { "location" : "greece" })
-
+        const collection = client.db(dbName).collection(collectionName);
+        const document = req.body;
+        const result = await collection.insertOne(document);
+        res.status(201).json(result);
     } catch (e) {
-        console.error(e);
+        res.status(500).json({ message: e.message });
     } finally {
         await client.close();
     }
-}
+});
 
 
-async function listDatabases(client) {
-    const databasesList = await client.db().admin().listDatabases();
 
-    console.log("Bases de données:");
-    databasesList.databases.forEach(db => console.log(` - ${db.name}`));
-}
+app.get('/api/:dbName/:collectionName', async (req, res) => {
+    try {
+        const { dbName, collectionName } = req.params;
+        const query = req.query; // Récupération des paramètres de requête
 
-async function findAllDocuments(mongoClient, dbName, collectionName) {
-    const collection = mongoClient.db(dbName).collection(collectionName);
-    const documents = await collection.find({}).toArray();
-
-    console.log(`Documents dans ${collectionName}:`);
-    documents.forEach(doc => console.log(doc));
-}
-
-async function getData (mongoClient, dbName, collectionName, condition){
-
-    const collection = mongoClient.db(dbName).collection(collectionName);
-    const documents = await collection.find(condition).toArray();
-
-    console.log(`Documents dans ${collectionName}:`);
-    documents.forEach(doc => console.log(doc));
-}
+        await client.connect();
+        const collection = client.db(dbName).collection(collectionName);
+        
+        // Utiliser les paramètres de requête comme filtre dans find()
+        const documents = await collection.find(query).toArray();
+        
+        res.json(documents);
+    } catch (e) {
+        res.status(500).json({ message: e.message });
+    } finally {
+        await client.close();
+    }
+});
 
 
-run().catch(console.error);
+app.put('/api/:dbName/:collectionName/:id', async (req, res) => {
+    try {
+        const { dbName, collectionName, id } = req.params;
+        await client.connect();
+        const collection = client.db(dbName).collection(collectionName);
+        const result = await collection.updateOne(
+            { _id: new ObjectId(id) },
+            { $set: req.body }
+        );
+        res.json(result);
+    } catch (e) {
+        res.status(500).json({ message: e.message });
+    } finally {
+        await client.close();
+    }
+});
+
+app.delete('/api/:dbName/:collectionName/:id', async (req, res) => {
+    try {
+        const { dbName, collectionName, id } = req.params;
+        await client.connect();
+        const collection = client.db(dbName).collection(collectionName);
+        const result = await collection.deleteOne({ _id: new ObjectId(id) });
+        res.json(result);
+    } catch (e) {
+        res.status(500).json({ message: e.message });
+    } finally {
+        await client.close();
+    }
+});
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
+
+
+
