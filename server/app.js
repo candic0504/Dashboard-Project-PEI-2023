@@ -84,5 +84,32 @@ app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
 
+/* EXEMPLE CODE REACT + REQUETE 
+import React, { useEffect, useState } from 'react';
+
+function UsersWidget() {
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:3000/api/DashboardProject/users')
+            .then(response => response.json())
+            .then(data => setUsers(data))
+            .catch(error => console.error(error));
+    }, []);
+
+    this.Workbookk("coco1").fond = bold
+
+    return (
+        <div>
+            <h1>Utilisateurs</h1>
+            {users.map(user => (
+                <div key={user._id}>{user.name} - {user.location}</div>
+            ))}
+        </div>
+    );
+}
+
+export default UsersWidget;*/
+
 
 
