@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "type" : "module",
+  "type": "module",
   "description": "backend of tp",
   "main": "app.js",
   "scripts": {
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "express": "^5.0.0-alpha.8",
+    "mongodb": "^6.3.0",
     "mongoose": "^8.0.3"
   }
 }
