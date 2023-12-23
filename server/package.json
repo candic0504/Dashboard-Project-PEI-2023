@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "type" : "module",
+  "type": "module",
   "description": "backend of tp",
   "main": "app.js",
   "scripts": {
@@ -14,6 +14,7 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.0.0-alpha.8",
     "mongoose": "^8.0.3"
   }
