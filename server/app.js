@@ -12,9 +12,10 @@ const client = new MongoClient(uri);
 
 app.use(express.json());
 
-//Changer avec Dashboard et user,measure,sensors
+//   Changer avec Dashboard et user,measure,sensors
 //   http://localhost:3000/api/DashboardProject/users
 
+//CRUD : Création
 app.post('/api/:dbName/:collectionName', async (req, res) => {
     try {
         const { dbName, collectionName } = req.params;
@@ -31,7 +32,8 @@ app.post('/api/:dbName/:collectionName', async (req, res) => {
 });
 
 
-
+//  http://localhost:3000/api/DashboardProject/users?location=greece
+//CRUD : Recherche avec connexion
 app.get('/api/:dbName/:collectionName', async (req, res) => {
     try {
         const { dbName, collectionName } = req.params;
@@ -51,7 +53,7 @@ app.get('/api/:dbName/:collectionName', async (req, res) => {
     }
 });
 
-
+//CRUD : Update
 app.put('/api/:dbName/:collectionName/:id', async (req, res) => {
     try {
         const { dbName, collectionName, id } = req.params;
@@ -69,6 +71,7 @@ app.put('/api/:dbName/:collectionName/:id', async (req, res) => {
     }
 });
 
+//CRUD : Delete
 app.delete('/api/:dbName/:collectionName/:id', async (req, res) => {
     try {
         const { dbName, collectionName, id } = req.params;
@@ -113,6 +116,5 @@ function UsersWidget() {
 }
 
 export default UsersWidget;*/
-
 
 
