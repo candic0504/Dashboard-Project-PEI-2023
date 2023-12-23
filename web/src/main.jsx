@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 
 import Apid from "./Apid.jsx";
 import ApiLocation from "./ApiLocation.jsx";
+import Sensor_Per_Year from "./Sensor_Per_Year.jsx";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,6 +19,7 @@ root.render(
 */}
     <Apid />
     <ApiLocation />
+    <Sensor_Per_Year/>
     
 
   </>
