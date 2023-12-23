@@ -1,8 +1,11 @@
 import express from 'express';
+import cors from 'cors';
 import { MongoClient } from 'mongodb';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+app.use(cors());
 
 const uri = 'mongodb+srv://candice:identifier2023@dashboardproject.pqclvmy.mongodb.net/?retryWrites=true&w=majority';
 const client = new MongoClient(uri);
