@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import { MongoClient } from 'mongodb';
+import { ObjectId } from 'mongodb';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -46,6 +47,25 @@ app.get('/api/:dbName/:collectionName', async (req, res) => {
         const documents = await collection.find(query).toArray();
         
         res.json(documents);
+    } catch (e) {
+        res.status(500).json({ message: e.message });
+    } finally {
+        await client.close();
+    }
+});
+
+//CRUD Recherche mais avec id 
+app.get('/api/:dbName/:collectionName/:id', async (req, res) => {
+    try {
+        const { dbName, collectionName, id } = req.params;
+        await client.connect();
+        const collection = client.db(dbName).collection(collectionName);
+        const document = await collection.findOne({ _id: new ObjectId(id) });
+        if (document) {
+            res.json(document);
+        } else {
+            res.status(404).send('Document not found');
+        }
     } catch (e) {
         res.status(500).json({ message: e.message });
     } finally {

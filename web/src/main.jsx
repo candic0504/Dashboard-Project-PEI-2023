@@ -4,11 +4,9 @@ import ReactDOM from "react-dom/client";
 // import App from "./App.jsx";
 
 import Apid from "./Apid.jsx";
-<<<<<<< HEAD
+import User from "./User.jsx";
 import Sensor_Per_Year from "./Sensor_Per_Year.jsx";
-=======
 
->>>>>>> origin
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -21,5 +19,6 @@ root.render(
 */}
     <Apid />
     <Sensor_Per_Year/>
+    <User/>
   </>
 );
