@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 // import App from "./App.jsx";
 
 import Apid from "./Apid.jsx";
+import ApiLocation from "./ApiLocation.jsx";
 import User from "./User.jsx";
 import Sensor_Per_Year from "./Sensor_Per_Year.jsx";
 
@@ -18,7 +19,10 @@ root.render(
     </React.StrictMode>
 */}
     <Apid />
+    <ApiLocation />
     <Sensor_Per_Year/>
     <User/>
+    
+
   </>
 );
