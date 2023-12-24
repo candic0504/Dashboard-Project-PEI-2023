@@ -7,6 +7,7 @@ import Apid from "./Apid.jsx";
 import ApiLocation from "./ApiLocation.jsx";
 import User from "./User.jsx";
 import Sensor_Per_Year from "./Sensor_Per_Year.jsx";
+import AirQualityWidget from "./AirQuality.jsx";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -22,7 +23,7 @@ root.render(
     <ApiLocation />
     <Sensor_Per_Year/>
     <User/>
-    
+    <AirQualityWidget/>
 
   </>
 );
