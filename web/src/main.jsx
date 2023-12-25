@@ -8,9 +8,12 @@ import ApiLocation from "./ApiLocation.jsx";
 import User from "./User.jsx";
 import Sensor_Per_Year from "./Sensor_Per_Year.jsx";
 import ApiAverageTHA from "./ApiAverageTHA.jsx";
-import AirQualityWidget from "./AirQuality.jsx";
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'leaflet/dist/leaflet.css';
+import OpenCageGeocoder from "./AirQuality.jsx";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,9 +27,8 @@ root.render(
     <ApiLocation />
     <Sensor_Per_Year/>
     <User/>
-    <ApiAverageTHA/>  
-    
-    <AirQualityWidget/>
+    <ApiAverageTHA/> 
+    <OpenCageGeocoder/>
 
   </>
 );
