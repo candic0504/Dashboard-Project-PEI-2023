@@ -8,6 +8,8 @@ function AirQualityWidget() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
+    const tauxPM10 = airQuality.list && airQuality.list[0].components.pm10 < 100;
+
     const handleAddressChange = (event) => {
         setAddress(event.target.value);
     };
@@ -44,14 +46,27 @@ function AirQualityWidget() {
     };
 
     return (
-        <div>
-            <h1>Qualité de l'Air</h1>
+        <div className="widget-container quality-widget">
+            <h1 className="widget-header quality-widget">Qualité de l'Air</h1>
             <input type="text" value={address} onChange={handleAddressChange} placeholder="Entrez une adresse" />
             <button onClick={handleGeocode}>Vérifier la Qualité de l'Air</button>
+            <h3 className="exemple">Exemple : 7 rue du Pavillon, Triel sur Seine</h3>
             {loading && <p>Chargement...</p>}
             {error && <p>Erreur : {error}</p>}
             {airQuality.list ? (
                 <div>
+                    {tauxPM10 ? (
+                        <>
+                        <img src="sourire.png" alt="BIEN" width="50" height="50" />
+                        <p>BONNE</p>
+                        </>
+                    ) : (
+                        <>
+                        <img src="masque.png" alt="NUL" width="50" height="50" />
+                        <p>MAUVAISE : Portez un masque ! </p>
+                        </>
+                    )}
+                    <h3>INDICATEURS</h3>
                     <p>PM2.5: {airQuality.list[0].components.pm2_5}</p>
                     <p>PM10: {airQuality.list[0].components.pm10}</p>
                     {/* Autres composants de qualité de l'air */}
