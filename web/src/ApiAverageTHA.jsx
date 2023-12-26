@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './ApiAverageTHA.css';
 
-function MeasureWidget() {
+function ApiAverageTHA() {
     const [selectedMeasure, setSelectedMeasure] = useState('');
     const [averageValue, setAverageValue] = useState(0);
 
@@ -45,4 +45,4 @@ function MeasureWidget() {
     );
 }
 
-export default MeasureWidget;
+export default ApiAverageTHA;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './ApiLocation.css';
 
-function SensorWidget() {
+function ApiLocation() {
     const [selectedLocation, setSelectedLocation] = useState('');
     const [percentage, setPercentage] = useState(null);
 
@@ -42,4 +42,4 @@ function SensorWidget() {
 }
 
 
-export default SensorWidget;
+export default ApiLocation;

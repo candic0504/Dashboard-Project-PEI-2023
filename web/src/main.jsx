@@ -8,11 +8,10 @@ import ApiLocation from "./ApiLocation.jsx";
 import User from "./User.jsx";
 import Sensor_Per_Year from "./Sensor_Per_Year.jsx";
 import ApiAverageTHA from "./ApiAverageTHA.jsx";
-import MeasureWidget from "./ApiGraph.jsx";
+import ApiGraph from "./ApiGraph.jsx";
 import OpenCageGeocoder from "./AirQuality.jsx";
 import AdminPage from "./AdminPage"; 
 import Navigation from './Navigation'; 
-import ApiGraph from "./ApiGraph.jsx";
 
 //CSS 
 import './App.css';

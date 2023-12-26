@@ -4,8 +4,8 @@
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Ajouts pour le positionnement */
-    margin-left: auto;
-    margin-right: 0;
+    margin-top: -26rem;
+    
     width: calc(50% - 20px); /* Ajustez en fonction de la largeur désirée */
 }
 

@@ -5,7 +5,7 @@ import 'chartjs-adapter-date-fns';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ApiGraph.css';
 
-const MeasureWidget = () => {
+const ApiGraph = () => {
     const [chartData, setChartData] = useState({ datasets: [] });
     const [sensorID, setSensorID] = useState("");
     const [searchedSensorID, setSearchedSensorID] = useState(""); 
@@ -143,4 +143,4 @@ const MeasureWidget = () => {
     );
 }
 
-export default MeasureWidget;
+export default ApiGraph;

@@ -33,10 +33,6 @@
   outline: none; /* Supprimer l'outline au focus pour les normes Bootstrap */
 }
 
-/* Style personnalisé pour le menu déroulant si nécessaire */
-.custom-select {
-  /* Si vous avez besoin d'ajouter des styles personnalisés pour le menu déroulant */
-}
 
 /* Définition des couleurs de fond en fonction de la température */
 .weather-widget-chaud {

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import './ApiD.css'; 
 
-const WeatherWidget = () => {
+const ApiD = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [selectedPays, setSelectedPays] = useState('Ethiopia'); // Pays par défaut
   const [isLoading, setIsLoading] = useState(true);
@@ -51,7 +51,7 @@ const WeatherWidget = () => {
 
   return (
     <div className={`weather-widget-custom d-flex flex-column align-items-center justify-content-center text-white p-3 my-3 rounded shadow ${backgroundClass}`}>
-      <div className="mb-3 w-100">
+       <div className="col-lg-3 col-md-8 col-sm-12 mx-auto" style={{ margin: '50px', gap: '20px' }}>
         <select className="form-select custom-select" value={selectedPays} onChange={handlePaysChange}>
           {pays.map(pays => (
             <option key={pays} value={pays}>{pays}</option>
@@ -66,5 +66,5 @@ const WeatherWidget = () => {
   );
 };
 
-export default WeatherWidget;
+export default ApiD;
 
