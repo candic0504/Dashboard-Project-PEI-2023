@@ -1,7 +1,10 @@
-.body {
-    background-color: aqua;
+body {
+    background-color: #FFF59A;
 }
-
+.admin-background {
+    background-color: #FFF59A;
+    min-height: 100vh;
+}
 
 .link-button {
     display: inline-block;

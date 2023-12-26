@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import './AdminPage.css';
 
 function AdminPage() {
     const [selectedCollection, setSelectedCollection] = useState('');
@@ -77,7 +78,7 @@ function AdminPage() {
     
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid admin-background">
             <div className="row">
                 <form onSubmit={handleSubmit}>
                         <select onChange={handleCollectionChange} value={selectedCollection}>

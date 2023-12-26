@@ -23,14 +23,18 @@ function SensorWidget() {
     
 
     return (
-        <div>
-            <h1>Données des Capteurs</h1>
-            <select onChange={(e) => setSelectedYear(e.target.value)}>
-                <option value="">Choisissez une année</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-            </select>
-            <p>Total des capteurs de {selectedYear} : {selectedYear === '2019' ? count2019 : count2018}</p>
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-2 col-md-4 col-sm-6 mx-auto" style={{ margin: '50px', gap: '20px' }}>
+                    <h1>Données des Capteurs</h1>
+                    <select onChange={(e) => setSelectedYear(e.target.value)}>
+                        <option value="">Choisissez une année</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                    </select>
+                    <p>Total des capteurs de {selectedYear} : {selectedYear === '2019' ? count2019 : count2018}</p>
+                </div>
+            </div>
         </div>
     );
     
