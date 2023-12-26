@@ -96,7 +96,16 @@ const MeasureWidget = () => {
     }, [sensorID]);
 
     return (
-        <div className="d-flex justify-content-center align-items-center my-3">
+        <div className='container'>
+            <div className='row'>
+                <div className="col-lg-5 col-md-8 col-sm-12 mx-auto" style={{ margin: '50px', gap: '20px' }}>
+                    <div>
+                        <div className="d-flex justify-content-center align-items-center my-3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="card measure-widget">
                 <div className="card-header text-center">
                     <h1>Graphique des Mesures pour Capteur {sensorID}</h1>

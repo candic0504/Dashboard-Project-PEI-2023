@@ -18,20 +18,26 @@ function SensorWidget() {
     }, [selectedLocation]);
 
     return (
-        <div className="widget-container">
-        <h1 className="widget-header">Localisation des Capteurs</h1>
-        <select className="form-select form-select-lg mb-3" onChange={(e) => setSelectedLocation(e.target.value.toLowerCase())}>
-            <option value="">Choisissez une localisation</option>
-            <option value="bedroom">Chambre</option>
-            <option value="bathroom">Salle de bain</option>
-            <option value="livingroom">Salon</option>
-            <option value="entrance">Entrée</option>
-             
-        </select>
-             {selectedLocation && <div className="alert alert-info widget-alert" role="alert">
-             Pourcentage de capteurs dans {selectedLocation} : {percentage}%
-        </div>}
-    </div>
+        <div className='container'>
+            <div className='row'>
+                <div className="col-lg-3 col-md-8 col-sm-12 mx-auto" style={{ margin: '50px', gap: '20px' }}>
+                    <div className="widget-container" >
+                        <h1 className="widget-header">Localisation des Capteurs</h1>
+                                <select className="form-select form-select-lg mb-3" onChange={(e) => setSelectedLocation(e.target.value.toLowerCase())}>
+                                    <option value="">Choisissez une localisation</option>
+                                    <option value="bedroom">Chambre</option>
+                                    <option value="bathroom">Salle de bain</option>
+                                    <option value="livingroom">Salon</option>
+                                    <option value="entrance">Entrée</option>
+                                    
+                                </select>
+                                    {selectedLocation && <div className="alert alert-info widget-alert" role="alert">
+                                    Pourcentage de capteurs dans {selectedLocation} : {percentage}%
+                                </div>}
+                    </div>
+                </div>
+            </div>
+        </div>
 );
 }
 

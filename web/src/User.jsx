@@ -21,21 +21,24 @@ function UserWidget() {
     };
     
     return (
-        <div className="widget-container">
-            <h1 className="widget-header">Données de l'Utilisateur</h1>
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    value={selectedUser}
-                    onChange={(e) => setSelectedUser(e.target.value)}
-                    placeholder="Entrez l'ID d'un utilisateur"
-                />
-                <button type="submit">Rechercher</button>
-            </form>
-            <p>Taille de la maison : {sizeHouse}</p>
-            <p>Nombre de personnes dans la maison : {nbPerson}</p>
-            <p>Pays : {country}</p>
-
+        <div className="container">
+            <div className='row'>
+                <div className="col-lg-3 col-md-8 col-sm-12 mx-auto" style={{ margin: '50px', gap: '20px' }}>
+                    <h1 className="widget-header">Données de l'Utilisateur</h1>
+                    <form onSubmit={handleSubmit}>
+                        <input
+                            type="text"
+                            value={selectedUser}
+                            onChange={(e) => setSelectedUser(e.target.value)}
+                            placeholder="Entrez l'ID d'un utilisateur"
+                        />
+                        <button type="submit">Rechercher</button>
+                    </form>
+                    <p>Taille de la maison : {sizeHouse}</p>
+                    <p>Nombre de personnes dans la maison : {nbPerson}</p>
+                    <p>Pays : {country}</p>
+                </div>
+            </div>
         </div>
     );
 
