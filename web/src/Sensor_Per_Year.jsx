@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Sensor_per_Year.css';
 
 function SensorWidget() {
     const [count2019, setCount2019] = useState(0);
@@ -26,13 +27,16 @@ function SensorWidget() {
         <div className="container">
             <div className="row">
                 <div className="col-lg-2 col-md-8 col-sm-12 mx-auto" style={{ margin: '50px', gap: '20px' }}>
-                    <h1>Données des Capteurs</h1>
-                    <select onChange={(e) => setSelectedYear(e.target.value)}>
-                        <option value="">Choisissez une année</option>
-                        <option value="2019">2019</option>
-                        <option value="2018">2018</option>
-                    </select>
-                    <p>Total des capteurs de {selectedYear} : {selectedYear === '2019' ? count2019 : count2018}</p>
+                    <div className='sensor-container d-flex flex-column align-items-center'>
+                                        <select className='choix-annee' onChange={(e) => setSelectedYear(e.target.value)}>
+                                            <option value="">Choisissez une année</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                        </select>
+                                        <p className='number-sensor'> {selectedYear === '2019' ? count2019 : count2018}</p>
+                                        <h1 >Capteurs achetés</h1>
+                                        <p>en {selectedYear} </p>
+                    </div>  
                 </div>
             </div>
         </div>

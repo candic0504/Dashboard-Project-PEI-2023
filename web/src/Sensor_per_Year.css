@@ -1,0 +1,52 @@
+.sensor-container {
+    border-radius: 30px;
+    background: #ffffff;
+    padding-top: 8%;
+}
+
+h1 {
+    color: #494848;
+
+    font-family: Istok Web;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: -2%;
+}
+
+p{
+    color: #494848;
+
+    font-family: Impact;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.number-sensor {
+
+    color: #494848;
+
+    font-family: Impact;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: -10%;
+}
+
+.choix-annee {
+
+    font-family: Istok Web;
+    font-size: 15px;
+    background-color: #ffffff00; /* Couleur de fond */
+    border: 1px solid #ced4da00; /* Bordure */
+    padding: 5px;
+    border-radius: 100px;
+    margin-left: 10%; 
+    margin-right: 10%;
+
+  }
