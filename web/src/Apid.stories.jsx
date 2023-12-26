@@ -1,6 +1,6 @@
 import React from 'react';
-import WeatherWidget from './Apid.jsx';
-import './Apid.css';
+import WeatherWidget from './ApiD.jsx';
+import './ApiD.css';
 
 export default {
   title: 'Components/WeatherWidget',

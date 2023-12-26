@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-import './ApidLocation.css';
+import './ApiLocation.css';
 
 function SensorWidget() {
     const [selectedLocation, setSelectedLocation] = useState('');

@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import './Apid.css';
+import './ApiD.css'; 
 
 const WeatherWidget = () => {
   const [weatherData, setWeatherData] = useState(null);
-  const [selectedPays, setSelectedPays] = useState('France'); // Pays par défaut
+  const [selectedPays, setSelectedPays] = useState('Ethiopia'); // Pays par défaut
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
   // Liste des pays pour le menu déroulant
-  const pays = ['Republic of France', 'Ethiopia', 'Czech republic', 'Italy', 'Greece','China', 'Poland', 'Thailand', 'Morocco', 'Malaysia','Slovenia', 'Philippines', 'Mexico', 'Ecuador', 'Albania','Japan','Peru','Russia'];
+  const pays = ['Ethiopia', 'Czech republic', 'Italy', 'Greece','China', 'Poland', 'Thailand', 'Morocco', 'Malaysia','Slovenia', 'Philippines', 'Mexico', 'Ecuador', 'Albania','Japan','Peru','Russia'];
 
   // Déterminez la classe de fond en fonction de la température
   const backgroundClass = weatherData && weatherData.main.temp > 20 ? 'weather-widget-chaud' : 'weather-widget-froid';

@@ -1,0 +1,19 @@
+
+.measure-widget {
+    width: 100%; /* ou la largeur maximale que vous souhaitez */
+    max-width: 600px; /* ou ajustez en fonction de la taille de votre widget */
+    /* Ajoutez des styles pour le card-header et card-body si nécessaire */
+}
+
+/* Style supplémentaire pour le graphique si nécessaire */
+.chart-container {
+    position: relative;
+    height: 40vh; /* ou la hauteur que vous souhaitez */
+    width: 80vw; /* ou la largeur que vous souhaitez */
+}
+
+/* Assurez-vous que le graphique s'affiche correctement dans le conteneur */
+.react-chartjs-2 {
+    width: 100%;
+    height: 100%;
+}
