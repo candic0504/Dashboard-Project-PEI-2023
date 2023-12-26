@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import App from "./App.jsx";
 
-import ApiD from "./ApiD.jsx";
+import Apid from "./Apid.jsx";
 import ApiLocation from "./ApiLocation.jsx";
 import User from "./User.jsx";
 import Sensor_Per_Year from "./Sensor_Per_Year.jsx";
 import ApiAverageTHA from "./ApiAverageTHA.jsx";
-import ApiGraph from "./ApiGraph.jsx";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -20,13 +20,11 @@ root.render(
       <App />
     </React.StrictMode>
 */}
-
-   <ApiD />
+    <Apid />
     <ApiLocation />
     <Sensor_Per_Year/>
     <User/>
-    <ApiAverageTHA/> 
-    <ApiGraph/>
+    <ApiAverageTHA/>  
     
 
   </>
