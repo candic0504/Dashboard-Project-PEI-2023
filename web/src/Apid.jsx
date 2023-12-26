@@ -50,7 +50,7 @@ const WeatherWidget = () => {
   }
 
   return (
-    <div className={`weather-widget-custom d-flex flex-column align-items-center justify-content-center text-white p-3 my-3 rounded shadow ${backgroundClass}`}>
+    <div className={`weather-widget-custom d-flex flex-column align-items-center justify-content-center text-white p-3 rounded shadow ${backgroundClass}`}>
       <div className="mb-3 w-100">
         <select className="form-select custom-select" value={selectedPays} onChange={handlePaysChange}>
           {pays.map(pays => (

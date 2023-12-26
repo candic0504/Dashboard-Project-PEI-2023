@@ -1,11 +1,10 @@
 .weather-widget-custom {
     background-color: #494848; /* Fond du widget personnalisé */
-    width: 200px; /* Largeur personnalisée pour le widget */
     font-family: 'Arial', sans-serif; /* Police personnalisée pour le widget */
   }
   
   
-  /* Par exemple, si vous avez besoin d'un style de bouton personnalisé non couvert par Bootstrap */
+
   .weather-widget-custom button.custom-button {
     background-color: #f0f0f0;
     color: #333;
@@ -16,7 +15,7 @@
     background-color: #e0e0e0;
   }
   
-  /* Style personnalisé pour le bouton "Plus d'infos" */
+  
 .custom-info-button {
   background-color: #17a2b8; /* Couleur de fond bleu Bootstrap pour les boutons info */
   color: white; /* Texte blanc */

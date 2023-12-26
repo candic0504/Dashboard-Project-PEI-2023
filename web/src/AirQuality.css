@@ -1,0 +1,68 @@
+.air-container {
+    border-radius: 30px;
+    background: #494848;
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column; /* Pour placer les éléments les uns en dessous des autres */
+    align-items: center; /* Pour centrer les éléments horizontalement */
+    gap: 1rem; /* Espace entre les éléments */
+}
+
+
+
+.adresse {
+    font-family: Istok Web;
+    font-size: 15px;
+    background-color: #ffffff;
+    border: 1px solid #FFF59A;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.verif {
+    color: #494848;
+    font-family: Istok Web;
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #FFF59A;
+    border-radius: 5px;
+    margin-left: 1rem; 
+}
+
+.exemple {
+    color: #FFF59A;
+    font-family: Istok Web;
+    font-size: 12px;
+}
+
+h1 {
+    color: #FFF;
+    font-family: Impact;
+    font-size: 30px;
+}
+
+p {
+    color: #FFF59A;
+    font-family: Impact;
+    font-size:30px;
+    margin-left: 27%;
+}
+
+.indicateur {
+    color: #FFF59A;
+    font-family: Istok Web;
+    font-size: 12px;
+    margin-left: 25%;
+}
+
+.pm2, .pm10 {
+    color: #FFF59A;
+    font-family: Istok Web;
+    font-size: 12px;
+    margin-left: 30%;
+}
+
+img {
+    margin-left: 35%; 
+}
