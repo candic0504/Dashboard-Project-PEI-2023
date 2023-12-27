@@ -19,18 +19,22 @@ function ApiLocation() {
 
     return (
         <div className='widget-container'>
-                        <h1 >Localisation des Capteurs</h1>
-                                <select className="form-select form-select-lg mb-3" onChange={(e) => setSelectedLocation(e.target.value.toLowerCase())}>
-                                    <option value="Localisation">Choisissez une localisation</option>
-                                    <option value="bedroom">Chambre</option>
-                                    <option value="bathroom">Salle de bain</option>
-                                    <option value="livingroom">Salon</option>
-                                    <option value="entrance">Entrée</option>
-                                    
-                                </select>
-                                    {selectedLocation && <div className="alert alert-info widget-alert" role="alert">
-                                    Pourcentage de capteurs dans {selectedLocation} : {percentage}%
-                                </div>}
+         <h1 className='titre'>Localisation des Capteurs</h1>
+             <select className="form-select form-select-lg mb-3" onChange={(e) => setSelectedLocation(e.target.value.toLowerCase())}>
+               <option value="Localisation">Choisissez une localisation</option>
+                <option value="bedroom">Chambre</option>
+                <option value="bathroom">Salle de bain</option>
+                <option value="livingroom">Salon</option>
+                <option value="entrance">Entrée</option>    
+            </select>
+               {selectedLocation && <div className="pourcentage">
+                <div className="value-pourcentage">
+               {percentage}% 
+                </div>
+                <div className="text-pourcentage">
+               des capteurs sont dans {selectedLocation}  
+                </div>
+                 </div>}
         </div>
 );
 }

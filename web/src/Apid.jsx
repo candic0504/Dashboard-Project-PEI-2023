@@ -51,21 +51,26 @@ const ApiD = () => {
 
   return (
     <div className={`weather-widget-custom d-flex flex-column text-white p-4 ${backgroundClass}`}>
-      <div className="mb-5 w-100">
+      <div className="mb-4">
         <select className="form-select custom-select" value={selectedPays} onChange={handlePaysChange}>
           {pays.map(pays => (
             <option key={pays} value={pays}>{pays}</option>
           ))}
         </select>
       </div >
+
       <div className="weather-info">
-      <h2>Météo à {weatherData.name}</h2>
+      <h2 className='Pays'>Météo à {weatherData.name}</h2>
       </div>
-      <div className="weather-temp">
-      <h2>Température: {weatherData.main.temp} °C</h2>
+
+      <div className="temperature">
+       <h2>Température:</h2>
+       <p className='value-temp'> {weatherData.main.temp} °C </p>
       </div>
-      <div className="weather-hum">
-      <h2>Humidité: {weatherData.main.humidity}%</h2>
+
+      <div className="humidite">
+      <h2>Humidité: </h2> 
+      <p className='value-hum'> {weatherData.main.humidity}% </p>
       </div>
     </div>
   );

@@ -8,20 +8,37 @@
   
   .weather-info {
     text-align: center; /* Centrer le texte */
-    width: 100%; /* Utilisez la largeur complète du conteneur */
     margin-top: 1rem; /* Ajustez l'espacement au-dessus des informations météo */
 }
 
-  .weather-temp{
-    text-align: center; /* Centrer le texte */
-    width: 100%; /* Utilisez la largeur complète du conteneur */
-    margin-top: 3rem; /* Ajustez l'espacement au-dessus des informations météo */
+.Pays{
+  font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
 }
 
-  .weather-hum{
+  .temperature{
     text-align: center; /* Centrer le texte */
-    width: 100%; /* Utilisez la largeur complète du conteneur */
-    margin-top: 3rem; /* Ajustez l'espacement au-dessus des informations météo */
+    margin-top: 1rem; /* Ajustez l'espacement au-dessus des informations météo */
+}
+
+.value-temp{
+  color: #494848;
+  text-align: left;
+  font-size: 70px;
+
+}
+
+  .humidite{
+    text-align: center; /* Centrer le texte */
+    margin-top: 1rem; /* Ajustez l'espacement au-dessus des informations météo */
+  }
+
+  .value-hum{
+    color: #494848;
+   text-align: center;
+   font-size: 70px;
+   margin-left: -1rem;
   }
 
   .weather-widget-custom button.custom-button {
@@ -54,7 +71,7 @@
 
 /* Définition des couleurs de fond en fonction de la température */
 .weather-widget-chaud {
-  background-color: #FAC07C; /* Couleur pour les températures chaudes */
+  background-color: rgba(255, 245, 154, 1); /* Couleur pour les températures chaudes */
 }
 
 .weather-widget-froid {
