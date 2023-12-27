@@ -1,7 +1,9 @@
 .sensor-per-year-container {
+    height: 16rem;
     border-radius: 30px;
     background: #ffffff;
     padding-top: 8%;
+    
 }
 
 .capteur-achete {

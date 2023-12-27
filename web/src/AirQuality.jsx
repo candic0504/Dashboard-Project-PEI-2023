@@ -74,7 +74,7 @@ function AirQualityWidget() {
                                                                 {/* Autres composants de qualité de l'air */}
                                                             </div>
                                                         ) : (
-                                                            <p>Entrez une adresse pour obtenir les données de qualité de l'air</p>
+                                                            <p></p>
                                                         )}
                     </div>
         </div>

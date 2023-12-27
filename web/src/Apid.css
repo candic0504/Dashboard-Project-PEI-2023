@@ -27,6 +27,7 @@
 
 .custom-info-button:hover,
 .custom-info-button:focus {
+  
   background-color: #138496; /* Couleur plus foncée au survol et au focus */
   color: white; /* Texte blanc */
   outline: none; /* Supprimer l'outline au focus pour les normes Bootstrap */
