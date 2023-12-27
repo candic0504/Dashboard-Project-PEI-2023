@@ -1,22 +1,83 @@
-body {
-    background-color: #FFF59A;
-}
+
 .admin-background {
-    background-color: #FFF59A;
-    min-height: 100vh;
+
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.link-button {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .link-button:hover {
-    background-color: #0056b3;
-  }
-  
+/* En-tête */
+.menu {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Style de la barre de sélection */
+select.form-control.mb-3 {
+  width: 60%; /* Ajuster selon la largeur désirée */
+  margin: auto;
+  display: block;
+  background-color: #555;
+  color: white;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+/* Style des sections input */
+.row > form {
+  background-color: #D3D3D3;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+/* Style des boutons */
+.btn {
+  display: block;
+  width: calc(100% - 40px); /* Ajuster la largeur pour l'espacement */
+  margin: 10px auto;
+  border: none;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.btn-danger {
+  background-color: #ff4d4d;
+}
+
+.btn-info {
+  background-color: #FFF59A;
+}
+
+.btn-success {
+  background-color: #FFF59A;
+}
+
+/* Style des inputs dans le formulaire */
+.row > form > input {
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Bouton de retour à l'accueil */
+.link-home {
+  color: #333;
+  background-color: #D3D3D3;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  float: right; /* Ajuster selon la position désirée */
+  margin-top: 20px;
+}
+
+/* Ajouter d'autres styles personnalisés ici */
+

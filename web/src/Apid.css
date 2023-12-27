@@ -53,7 +53,7 @@
   
   
 .custom-info-button {
-  background-color: #17a2b8; /* Couleur de fond bleu Bootstrap pour les boutons info */
+  background-color: #494848; /* Couleur de fond bleu Bootstrap pour les boutons info */
   color: white; /* Texte blanc */
   border: none; /* Pas de bordure */
   padding: 0.375rem 0.75rem; /* Padding Bootstrap par défaut pour les boutons */
@@ -63,7 +63,8 @@
 
 .custom-info-button:hover,
 .custom-info-button:focus {
-  background-color: #138496; /* Couleur plus foncée au survol et au focus */
+  
+  background-color: #494848; /* Couleur plus foncée au survol et au focus */
   color: white; /* Texte blanc */
   outline: none; /* Supprimer l'outline au focus pour les normes Bootstrap */
 }

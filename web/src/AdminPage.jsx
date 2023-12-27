@@ -79,9 +79,10 @@ function AdminPage() {
 
     return (
         <div className="container-fluid admin-background">
-            <div className="row">
-                <form onSubmit={handleSubmit}>
-                        <select onChange={handleCollectionChange} value={selectedCollection}>
+            <div className="row justify-content-center align-items-center mt-5">
+                <h1 className=' menu'> VEUILLEZ CHOISIR UNE COLLECTION</h1>
+                <form  onSubmit={handleSubmit} className="col-md-6">
+                        <select className="form-control mb-3" onChange={handleCollectionChange} value={selectedCollection}>
                             <option value="">Choisissez une collection</option>
                             <option value="users">users</option>
                             <option value="sensors">sensors</option>
@@ -90,7 +91,7 @@ function AdminPage() {
                 </form>
             </div>
             <div className="row">
-            <form onSubmit={handleSubmit}>
+            <form  onSubmit={handleSubmit}>
                     {
                         selectedCollection === "users" && (
                             <>
@@ -117,17 +118,16 @@ function AdminPage() {
                             </>
                         )
                     }
-                    <button type="submit" className="btn btn-success">Créer Document</button>
+                    <button type="submit" className="btn btn-success btn-lg btn-block">Créer Document</button>
                 </form>
             </div>
-            <div className="row">
-                <input type="text" placeholder="ID à supprimer" value={idToDelete} onChange={e => setIdToDelete(e.target.value)} />
-                <button onClick={handleDelete} className="btn btn-danger">Supprimer Donnée</button>
+            <div className="row justify-content-center mt-3">
+                <input className='form-control col-md-4' type="text" placeholder="ID à supprimer" value={idToDelete} onChange={e => setIdToDelete(e.target.value)} />
+                <button onClick={handleDelete} className="btn btn-danger btn btn-danger ml-3">Supprimer Donnée</button>
             </div>
 
-            <div className="row">
-                <button onClick={handleAccessData} className="btn btn-info">Accéder aux Données</button>
-                {/* Afficher les données accédées */}
+            <div className="row justify-content-center mt-3">
+                <button onClick={handleAccessData} className="btn btn-info btn-lg">Accéder aux Données</button>
                 {dataAccessed && <div>{/* ... affichage des données ... */}</div>}
             </div>
         </div>
