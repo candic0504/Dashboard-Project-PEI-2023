@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './AirQuality.css';
 
 function AirQualityWidget() {
     const [airQuality, setAirQuality] = useState({});
@@ -47,37 +48,35 @@ function AirQualityWidget() {
 
     return (
         <div className="container">
-            <div className='row'>
-                <div className="col-lg-3 col-md-8 col-sm-12 mx-auto" style={{ margin: '50px', gap: '20px' }}>
-                    <h1 className="widget-header quality-widget">Qualité de l'Air</h1>
-                                <input type="text" value={address} onChange={handleAddressChange} placeholder="Entrez une adresse" />
-                                <button onClick={handleGeocode}>Vérifier la Qualité de l'Air</button>
-                                <h3 className="exemple">Exemple : 7 rue du Pavillon, Triel sur Seine</h3>
-                                {loading && <p>Chargement...</p>}
-                                {error && <p>Erreur : {error}</p>}
-                                {airQuality.list ? (
-                                    <div>
-                                        {tauxPM10 ? (
-                                            <>
-                                            <img src="sourire.png" alt="BIEN" width="50" height="50" />
-                                            <p>BONNE</p>
-                                            </>
-                                        ) : (
-                                            <>
-                                            <img src="masque.png" alt="NUL" width="50" height="50" />
-                                            <p>MAUVAISE : Portez un masque ! </p>
-                                            </>
-                                        )}
-                                        <h3>INDICATEURS</h3>
-                                        <p>PM2.5: {airQuality.list[0].components.pm2_5}</p>
-                                        <p>PM10: {airQuality.list[0].components.pm10}</p>
-                                        {/* Autres composants de qualité de l'air */}
-                                    </div>
-                                ) : (
-                                    <p>Entrez une adresse pour obtenir les données de qualité de l'air</p>
-                                )}
-                </div>
-            </div>
+                    <div className='air-container d-flex flex-column align-items-center'>
+                                                        <input className="adresse" type="text" value={address} onChange={handleAddressChange} placeholder="Entrez une adresse" />
+                                                        <button className='verif' onClick={handleGeocode}>Vérif</button>
+                                                        <h3 className="exemple">Exemple : 7 rue du Pavillon, Triel sur Seine</h3>
+                                                        {loading && <p>Chargement...</p>}
+                                                        {error && <p>Erreur : {error}</p>}
+                                                        {airQuality.list ? (
+                                                            <div>
+                                                                <h1>Qualité de l'Air</h1>
+                                                                {tauxPM10 ? (
+                                                                    <>
+                                                                    <img src="sourire.png" alt="BIEN" width="50" height="50" />
+                                                                    <p>BONNE</p>
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                    <img src="masque.png" alt="NUL" width="50" height="50" />
+                                                                    <p>MAUVAISE : Portez un masque ! </p>
+                                                                    </>
+                                                                )}
+                                                                <h3 className='indicateur'>INDICATEURS</h3>
+                                                                <p className='pm2'>PM2.5: {airQuality.list[0].components.pm2_5}</p>
+                                                                <p className='pm10'>PM10: {airQuality.list[0].components.pm10}</p>
+                                                                {/* Autres composants de qualité de l'air */}
+                                                            </div>
+                                                        ) : (
+                                                            <p>Entrez une adresse pour obtenir les données de qualité de l'air</p>
+                                                        )}
+                    </div>
         </div>
     );
 }

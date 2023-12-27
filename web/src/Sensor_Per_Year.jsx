@@ -25,20 +25,16 @@ function SensorWidget() {
 
     return (
         <div className="container">
-            <div className="row">
-                <div className="col-lg-2 col-md-8 col-sm-12 mx-auto" style={{ margin: '50px', gap: '20px' }}>
-                    <div className='sensor-container d-flex flex-column align-items-center'>
+                    <div className='sensor-per-year-container d-flex flex-column align-items-center'>
                                         <select className='choix-annee' onChange={(e) => setSelectedYear(e.target.value)}>
                                             <option value="">Choisissez une année</option>
                                             <option value="2019">2019</option>
                                             <option value="2018">2018</option>
                                         </select>
-                                        <p className='number-sensor'> {selectedYear === '2019' ? count2019 : count2018}</p>
-                                        <h1 >Capteurs achetés</h1>
+                                        <p className='year-sensor'> {selectedYear === '2019' ? count2019 : count2018}</p>
+                                        <p className='capteur-achete' >Capteurs achetés</p>
                                         <p>en {selectedYear} </p>
                     </div>  
-                </div>
-            </div>
         </div>
     );
     

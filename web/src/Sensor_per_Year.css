@@ -1,10 +1,10 @@
-.sensor-container {
+.sensor-per-year-container {
     border-radius: 30px;
     background: #ffffff;
     padding-top: 8%;
 }
 
-h1 {
+.capteur-achete {
     color: #494848;
 
     font-family: Istok Web;
@@ -12,7 +12,6 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: -2%;
 }
 
 p{
@@ -26,7 +25,7 @@ p{
     
 }
 
-.number-sensor {
+.year-sensor {
 
     color: #494848;
 
@@ -43,7 +42,7 @@ p{
     font-family: Istok Web;
     font-size: 15px;
     background-color: #ffffff00; /* Couleur de fond */
-    border: 1px solid #ced4da00; /* Bordure */
+    border: 1px solid #ffffff00; /* Bordure */
     padding: 5px;
     border-radius: 100px;
     margin-left: 10%; 

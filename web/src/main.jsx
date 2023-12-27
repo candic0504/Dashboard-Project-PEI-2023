@@ -20,6 +20,7 @@ import './AdminPage.css';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AirQualityWidget from "./AirQuality.jsx";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -31,13 +32,35 @@ root.render(
       <Route path="/" element={
         <>
           {}
-          <Apid />
-          <ApiLocation />
-          <Sensor_Per_Year />
-          <User />
-          <ApiAverageTHA />
-          <OpenCageGeocoder />
-          <ApiGraph />
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-5 col-md-12 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1rem' }}>
+                <Apid/>
+              </div>
+              <div className="col-lg-7 col-md-12 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1rem'}}>
+                <ApiGraph/>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-3 col-md-6 col-sm-12 mx-auto" style={{margin: '2.125rem', gap: '1rem'}}>
+                <ApiLocation/>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1rem'}}>
+                <User/>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1rem'}}>
+                <Sensor_Per_Year/>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1rem'}}>
+                <AirQualityWidget/>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-12 col-md-12 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1.25rem'}}>
+                <ApiAverageTHA/>
+              </div>
+            </div>
+          </div>
         </>
       } />
       <Route path="/admin" element={<AdminPage />} /> {}
