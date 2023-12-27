@@ -8,11 +8,10 @@ import ApiLocation from "./ApiLocation.jsx";
 import User from "./User.jsx";
 import Sensor_Per_Year from "./Sensor_Per_Year.jsx";
 import ApiAverageTHA from "./ApiAverageTHA.jsx";
-import MeasureWidget from "./ApiGraph.jsx";
+import ApiGraph from "./ApiGraph.jsx";
 import OpenCageGeocoder from "./AirQuality.jsx";
 import AdminPage from "./AdminPage"; 
 import Navigation from './Navigation'; 
-import ApiGraph from "./ApiGraph.jsx";
 
 //CSS 
 import './App.css';
@@ -38,7 +37,7 @@ root.render(
               <div className="col-lg-5 col-md-12 col-sm-12 mx-auto" style={{ margin: '0.125rem', gap: '1rem' }}>
                 <Apid/>
               </div>
-              <div className="col-lg-7 col-md-12 col-sm-12 mx-auto" style={{ margin: '0.125rem', gap: '1rem'}}>
+              <div className="col-lg-7 col-md-12 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1rem' }}>
                 <ApiGraph/>
               </div>
             </div>

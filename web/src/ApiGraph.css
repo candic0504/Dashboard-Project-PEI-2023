@@ -1,19 +1,8 @@
-
-.measure-widget {
-   /* width: 100%; /* ou la largeur maximale que vous souhaitez */
-   /* max-width: 600px; /* ou ajustez en fonction de la taille de votre widget */
-
+.card {
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255) ;
 }
 
-
-.chart-container {
-    
-    /*height: 40vh; /* ou la hauteur que vous souhaitez */
-    /*width: 80vw; /* ou la largeur que vous souhaitez */
-}
-
- */
-.react-chartjs-2 {
-    /*width: 100%;
-    height: 100%;*/
+.card-header h1 {
+    color: black; 
 }

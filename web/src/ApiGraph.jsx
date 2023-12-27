@@ -5,7 +5,7 @@ import 'chartjs-adapter-date-fns';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ApiGraph.css';
 
-const MeasureWidget = () => {
+const ApiGraph = () => {
     const [chartData, setChartData] = useState({ datasets: [] });
     const [sensorID, setSensorID] = useState("");
     const [searchedSensorID, setSearchedSensorID] = useState(""); 
@@ -98,7 +98,7 @@ const MeasureWidget = () => {
     return (
         <div className='container'>
             <div className="card chart">
-                <div className="card-header text-center">
+                <div className="card-header">
                     <h1>Graphique des Mesures pour Capteur {sensorID}</h1>
                 </div>
                 <div className="card-body">
@@ -134,4 +134,4 @@ const MeasureWidget = () => {
     );
 }
 
-export default MeasureWidget;
+export default ApiGraph;

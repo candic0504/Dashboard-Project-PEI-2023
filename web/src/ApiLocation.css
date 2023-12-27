@@ -1,0 +1,11 @@
+.widget-container {
+    background-color: rgba(255, 245, 154, 1); /* Votre couleur de fond */
+    padding: 1rem;
+    border-radius: 30px;
+    height: 18rem;
+
+}
+
+.Localisation {
+    text-align: center;
+}

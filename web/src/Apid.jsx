@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import './ApiD.css'; 
 
-const WeatherWidget = () => {
+const ApiD = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [selectedPays, setSelectedPays] = useState('Ethiopia'); // Pays par défaut
   const [isLoading, setIsLoading] = useState(true);
@@ -50,21 +50,26 @@ const WeatherWidget = () => {
   }
 
   return (
-    <div className={`weather-widget-custom d-flex flex-column align-items-center justify-content-center text-white p-3 rounded shadow ${backgroundClass}`}>
-      <div className="mb-3 w-100">
+    <div className={`weather-widget-custom d-flex flex-column text-white p-4 ${backgroundClass}`}>
+      <div className="mb-5 w-100">
         <select className="form-select custom-select" value={selectedPays} onChange={handlePaysChange}>
           {pays.map(pays => (
             <option key={pays} value={pays}>{pays}</option>
           ))}
         </select>
-      </div>
+      </div >
+      <div className="weather-info">
       <h2>Météo à {weatherData.name}</h2>
-      <p>Température: {weatherData.main.temp} °C</p>
-      <p>Humidité: {weatherData.main.humidity}%</p>
-      {/*<button className="custom-info-button btn mt-2">Plus d'infos</button>*/}
+      </div>
+      <div className="weather-temp">
+      <h2>Température: {weatherData.main.temp} °C</h2>
+      </div>
+      <div className="weather-hum">
+      <h2>Humidité: {weatherData.main.humidity}%</h2>
+      </div>
     </div>
   );
 };
 
-export default WeatherWidget;
+export default ApiD;
 

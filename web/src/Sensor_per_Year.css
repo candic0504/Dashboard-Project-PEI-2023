@@ -2,8 +2,11 @@
     height: 16rem;
     border-radius: 30px;
     background: #ffffff;
-    padding-top: 8%;
-    
+    height: 18rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .capteur-achete {
@@ -41,7 +44,6 @@ p{
 
 .choix-annee {
 
-    font-family: Istok Web;
     font-size: 15px;
     background-color: #ffffff00; /* Couleur de fond */
     border: 1px solid #ffffff00; /* Bordure */
@@ -50,4 +52,20 @@ p{
     margin-left: 10%; 
     margin-right: 10%;
 
+  }
+
+  .form-select:hover, 
+  .form-select:focus {
+    background-color: #FFF59A; 
+  }
+
+
+.year-selected {
+    color: #494848;
+
+    font-family: Impact;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }

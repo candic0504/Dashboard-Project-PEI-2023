@@ -48,30 +48,31 @@ function AirQualityWidget() {
 
     return (
         <div className="container">
-                    <div className='air-container d-flex flex-column align-items-center'>
-                                                        <input className="adresse" type="text" value={address} onChange={handleAddressChange} placeholder="Entrez une adresse" />
-                                                        <button className='verif' onClick={handleGeocode}>Vérif</button>
+                    <div className='air-container d-flex flex-column justify-items-center'>
+                        <div className='d-flex justify-content-between'>
+                            <input className="form-control adresse" type="text" value={address} onChange={handleAddressChange} placeholder="Entrez une adresse" />
+                            <button className='btn btn-primary verif' onClick={handleGeocode}> 🔎</button>
+                        </div>
                                                         <h3 className="exemple">Exemple : 7 rue du Pavillon, Triel sur Seine</h3>
                                                         {loading && <p>Chargement...</p>}
-                                                        {error && <p>Erreur : {error}</p>}
                                                         {airQuality.list ? (
                                                             <div>
-                                                                <h1>Qualité de l'Air</h1>
+                                                                <p className='quality-air'>Qualité de l'Air</p>
                                                                 {tauxPM10 ? (
                                                                     <>
                                                                     <img src="sourire.png" alt="BIEN" width="50" height="50" />
-                                                                    <p>BONNE</p>
+                                                                    <p className='quality'>BONNE</p>
                                                                     </>
                                                                 ) : (
                                                                     <>
                                                                     <img src="masque.png" alt="NUL" width="50" height="50" />
-                                                                    <p>MAUVAISE : Portez un masque ! </p>
+                                                                    <p className='quality'>MAUVAISE</p>
                                                                     </>
                                                                 )}
                                                                 <h3 className='indicateur'>INDICATEURS</h3>
                                                                 <p className='pm2'>PM2.5: {airQuality.list[0].components.pm2_5}</p>
                                                                 <p className='pm10'>PM10: {airQuality.list[0].components.pm10}</p>
-                                                                {/* Autres composants de qualité de l'air */}
+                                                                
                                                             </div>
                                                         ) : (
                                                             <p></p>

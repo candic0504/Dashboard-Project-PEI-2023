@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './ApiAverageTHA.css';
 
-function MeasureWidget() {
+function ApiAverageTHA() {
     const [selectedMeasure, setSelectedMeasure] = useState('');
     const [averageValue, setAverageValue] = useState(0);
 
@@ -25,7 +25,7 @@ function MeasureWidget() {
 
     return (
             <div className='container'>
-                        <div className="widget-container measure-widget">
+                        <div className="widget-measures">
                             <h1 className="widget-header">Moyennes des Mesures</h1>
                                                         <select className="form-select form-select-lg mb-3" onChange={(e) => setSelectedMeasure(e.target.value)}>
                                                             <option value="">Choisissez une mesure</option>
@@ -41,4 +41,4 @@ function MeasureWidget() {
     );
 }
 
-export default MeasureWidget;
+export default ApiAverageTHA;

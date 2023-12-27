@@ -1,10 +1,13 @@
-.measure-widget {
+.widget-measures{
+    background-color:#D9D9D9;
+    padding: 1rem;
+    border-radius: 30px;
+    height: 12rem;
+}
+
+.widget-header{
+    color: black;
     
-    top: -1.25rem;
-    left: 18.75rem;
-    width: 100%; 
-    max-width: 600px; 
-    margin-top: 50px; 
-    margin-left: 50px; 
     
 }
+
