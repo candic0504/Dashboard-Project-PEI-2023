@@ -50,7 +50,7 @@ const ApiD = () => {
   }
 
   return (
-    <div className={`weather-widget-custom d-flex flex-column text-white p-4 ${backgroundClass}`}>
+    <div className={`weather-widget-custom d-flex flex-column p-4 ${backgroundClass}`}>
       <div className="mb-4">
         <select className="form-select custom-select" value={selectedPays} onChange={handlePaysChange}>
           {pays.map(pays => (

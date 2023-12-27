@@ -26,7 +26,7 @@ function SensorWidget() {
     return (
         <div className="container">
                     <div className='sensor-per-year-container d-flex flex-column align-items-center'>
-                                        <select className='form-select choix-annee ' onChange={(e) => setSelectedYear(e.target.value)}>
+                                        <select className='form-select choix-annee' onChange={(e) => setSelectedYear(e.target.value)}>
                                             <option value="">Choisissez une année</option>
                                             <option value="2019">2019</option>
                                             <option value="2018">2018</option>

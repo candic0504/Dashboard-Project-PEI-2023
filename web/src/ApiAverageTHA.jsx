@@ -25,18 +25,24 @@ function ApiAverageTHA() {
 
     return (
             <div className='container'>
-                        <div className="widget-measures">
-                            <h1 className="widget-header">Moyennes des Mesures</h1>
-                                                        <select className="form-select form-select-lg mb-3" onChange={(e) => setSelectedMeasure(e.target.value)}>
-                                                            <option value="">Choisissez une mesure</option>
-                                                            <option value="temperature">Température</option>
-                                                            <option value="humidity">Humidité</option>
-                                                            <option value="airPollution">Pollution de l'air</option>
-                                                        </select>
-                                                        {selectedMeasure && <div className="alert alert-info" role="alert">
-                                                            Moyenne de {selectedMeasure}: {averageValue}
-                                                        </div>}
-                        </div>
+                 <div className="widget-measures">
+                    <h1 className="widget-header">Moyennes des Mesures</h1>
+                    <select className="form-select form-select-lg mb-3 menudr" onChange={(e) => setSelectedMeasure(e.target.value)}>
+                    <option value="">Choisissez une mesure</option>
+                    <option value="temperature">Température</option>
+                    <option value="humidity">Humidité</option>
+                    <option value="airPollution">Pollution de l'air</option>
+                    </select>
+
+                   {selectedMeasure && <div className="average">
+                    <div className="value-average">
+                    {averageValue}
+                    </div>
+                    <div className="text-average">
+                     La Moyenne de {selectedMeasure} est
+                    </div>
+               </div>}
+           </div>
         </div>          
     );
 }
