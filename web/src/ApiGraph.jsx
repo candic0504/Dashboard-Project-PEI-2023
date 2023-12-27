@@ -98,7 +98,7 @@ const ApiGraph = () => {
     return (
         <div className='container'>
             <div className="card chart">
-                <div className="card-header text-center">
+                <div className="card-header">
                     <h1>Graphique des Mesures pour Capteur {sensorID}</h1>
                 </div>
                 <div className="card-body">

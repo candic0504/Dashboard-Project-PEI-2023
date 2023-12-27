@@ -1,18 +1,11 @@
 .widget-container {
-    background-color: #E0DFD6; /* Votre couleur de fond */
+    background-color: rgba(255, 245, 154, 1); /* Votre couleur de fond */
     padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Ajouts pour le positionnement */
-    margin-top: -26rem;
-    
-    width: calc(50% - 20px); /* Ajustez en fonction de la largeur désirée */
+    border-radius: 30px;
+    height: 18rem;
+
 }
 
-.widget-header {
-    margin-bottom: 1rem;
-}
-
-.widget-alert {
-    margin-top: 1rem;
+.Localisation {
+    text-align: center;
 }

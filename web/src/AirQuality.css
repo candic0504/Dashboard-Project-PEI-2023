@@ -6,6 +6,7 @@
     flex-direction: column; /* Pour placer les éléments les uns en dessous des autres */
     align-items: center; /* Pour centrer les éléments horizontalement */
     gap: 1rem; /* Espace entre les éléments */
+    height: 18rem;
 }
 
 

@@ -1,9 +1,28 @@
 .weather-widget-custom {
     background-color: #494848; /* Fond du widget personnalisé */
     font-family: 'Arial', sans-serif; /* Police personnalisée pour le widget */
+    height: 33.75rem; /* Hauteur du widget */
+    border-radius: 30px;
+    
   }
   
-  
+  .weather-info {
+    text-align: center; /* Centrer le texte */
+    width: 100%; /* Utilisez la largeur complète du conteneur */
+    margin-top: 1rem; /* Ajustez l'espacement au-dessus des informations météo */
+}
+
+  .weather-temp{
+    text-align: center; /* Centrer le texte */
+    width: 100%; /* Utilisez la largeur complète du conteneur */
+    margin-top: 3rem; /* Ajustez l'espacement au-dessus des informations météo */
+}
+
+  .weather-hum{
+    text-align: center; /* Centrer le texte */
+    width: 100%; /* Utilisez la largeur complète du conteneur */
+    margin-top: 3rem; /* Ajustez l'espacement au-dessus des informations météo */
+  }
 
   .weather-widget-custom button.custom-button {
     background-color: #f0f0f0;

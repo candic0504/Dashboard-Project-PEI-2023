@@ -25,7 +25,7 @@ function ApiAverageTHA() {
 
     return (
             <div className='container'>
-                        <div className="widget-container measure-widget">
+                        <div className="widget-measures">
                             <h1 className="widget-header">Moyennes des Mesures</h1>
                                                         <select className="form-select form-select-lg mb-3" onChange={(e) => setSelectedMeasure(e.target.value)}>
                                                             <option value="">Choisissez une mesure</option>

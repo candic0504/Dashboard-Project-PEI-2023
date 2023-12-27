@@ -18,10 +18,10 @@ function ApiLocation() {
     }, [selectedLocation]);
 
     return (
-        <div className='container'>
+        <div className='widget-container'>
                         <h1 >Localisation des Capteurs</h1>
                                 <select className="form-select form-select-lg mb-3" onChange={(e) => setSelectedLocation(e.target.value.toLowerCase())}>
-                                    <option value="">Choisissez une localisation</option>
+                                    <option value="Localisation">Choisissez une localisation</option>
                                     <option value="bedroom">Chambre</option>
                                     <option value="bathroom">Salle de bain</option>
                                     <option value="livingroom">Salon</option>

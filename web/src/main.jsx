@@ -37,7 +37,7 @@ root.render(
               <div className="col-lg-5 col-md-12 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1rem' }}>
                 <Apid/>
               </div>
-              <div className="col-lg-7 col-md-12 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1rem'}}>
+              <div className="col-lg-7 col-md-12 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1rem' }}>
                 <ApiGraph/>
               </div>
             </div>
