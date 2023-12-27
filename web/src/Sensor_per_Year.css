@@ -1,5 +1,5 @@
 .sensor-per-year-container {
-    height: 16rem;
+    
     border-radius: 30px;
     background: #ffffff;
     height: 20rem;
@@ -24,7 +24,7 @@
     color: #494848;
 
     font-family: Impact;
-    font-size: 130px;
+     font-size: 130px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -39,8 +39,13 @@
     border-radius: 100px;
     margin-left: 10%; 
     margin-right: 10%;
-    background-color: #FFF59A;
+    
 
+  }
+
+  .form-select.choix-annee{
+
+    background-color: #FFF59A;
   }
 
 .year-selected {

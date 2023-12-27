@@ -3,12 +3,13 @@
 
     border-radius: 30px;
     background: #494848;
-    height: 20rem;
+    height: 20em;
     padding: 1rem;
     overflow-y: scroll;
     display: flex;
     justify-content: center; 
     align-items: center; 
+
   }
   
   .adresse,
@@ -38,8 +39,8 @@
   .indicateur {
     margin-left: 0.5rem;
     font-size: 1rem; 
-    margin-top: 10px;
-    color: #D9D9D9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FFF59A;
     
   }
   

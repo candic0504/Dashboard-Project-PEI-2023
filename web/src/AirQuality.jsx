@@ -53,30 +53,30 @@ function AirQualityWidget() {
                             <input className="form-control adresse" type="text" value={address} onChange={handleAddressChange} placeholder="Entrez une adresse" />
                             <button className='btn btn-primary verif' onClick={handleGeocode}> 🔎</button>
                         </div>
-                                                        <h3 className="exemple">Exemple : 7 rue du Pavillon, Triel sur Seine</h3>
-                                                        {loading && <p>Chargement...</p>}
-                                                        {airQuality.list ? (
-                                                            <div>
-                                                                <p className='quality-air'>Qualité de l'Air</p>
-                                                                {tauxPM10 ? (
-                                                                    <>
-                                                                    <img src="sourire.png" alt="BIEN" width="50" height="50" />
-                                                                    <p className='quality'>BONNE</p>
-                                                                    </>
-                                                                ) : (
-                                                                    <>
-                                                                    <img src="masque.png" alt="NUL" width="50" height="50" />
-                                                                    <p className='quality'>MAUVAISE</p>
-                                                                    </>
-                                                                )}
-                                                                <h3 className='indicateur'>INDICATEURS</h3>
-                                                                <p className='pm2'>PM2.5: {airQuality.list[0].components.pm2_5}</p>
-                                                                <p className='pm10'>PM10: {airQuality.list[0].components.pm10}</p>
+                            <h3 className="exemple">Exemple : 7 rue du Pavillon, Triel sur Seine</h3>
+                            {loading && <p>Chargement...</p>}
+                            {airQuality.list ? (
+                             <div>
+                             <p className='quality-air'>Qualité de l'Air</p>
+                              {tauxPM10 ? (
+                              <>
+                              <img src="sourire.png" alt="BIEN" width="50" height="50" />
+                              <p className='quality'>BONNE</p>
+                               </>
+                                ) : (
+                                <>
+                                <img src="masque.png" alt="NUL" width="50" height="50" />
+                                <p className='quality'>MAUVAISE</p>
+                                 </>
+                                 )}
+                                <h3 className='indicateur'>INDICATEURS</h3>
+                                <p className='pm2'>PM2.5: {airQuality.list[0].components.pm2_5}</p>
+                                <p className='pm10'>PM10: {airQuality.list[0].components.pm10}</p>
                                                                 
-                                                            </div>
-                                                        ) : (
-                                                            <p></p>
-                                                        )}
+                               </div>
+                               ) : (
+                               <p></p>
+                              )}
                     </div>
         </div>
     );
