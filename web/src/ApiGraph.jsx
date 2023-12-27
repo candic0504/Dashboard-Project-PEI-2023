@@ -96,10 +96,10 @@ const ApiGraph = () => {
     }, [sensorID]);
 
     return (
-        <div className='container'>
+        <div className='containerGraph'>
             <div className="card chart">
                 <div className="card-header">
-                    <h1>Graphique des Mesures pour Capteur {sensorID}</h1>
+                    <h1>Graphique des Mesures pour Capteur </h1>
                 </div>
                 <div className="card-body">
                     <div className="form-group">

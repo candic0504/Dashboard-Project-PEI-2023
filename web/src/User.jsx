@@ -23,23 +23,23 @@ function UserWidget() {
     
     return (
         <div className="container">
-                    <div className='user-container d-flex flex-column justify-items-center'>
-                                            <h1 className='donne-utilisateur'>Données de l'Utilisateur</h1>
-                                            <form className='d-flex justify-content-between' onSubmit={handleSubmit}>
-                                                <input className='form-control id-user'
-                                                    type="text"
-                                                    value={selectedUser}
-                                                    onChange={(e) => setSelectedUser(e.target.value)}
-                                                    placeholder="Entrez l'ID d'un utilisateur"
-                                                />
-                                                <button className="btn btn-primary" type="submit">
-                                                   🔎
-                                                </button>
-                                            </form>
-                                            <p className='sizeHouse'>Taille de la maison : {sizeHouse}</p>
-                                            <p className='nbPersonne'>Nombre de personnes dans la maison : {nbPerson}</p>
-                                            <p className='country'>Pays : {country}</p>
-                    </div>
+            <div className='user-container d-flex flex-column justify-items-center'>
+            <h1 className='donne-utilisateur'>Données de l'Utilisateur</h1>
+            <form className='d-flex justify-content-between' onSubmit={handleSubmit}>
+            <input className='form-control id-user'
+            type="text"
+            value={selectedUser}
+            onChange={(e) => setSelectedUser(e.target.value)}
+            placeholder="Entrez l'ID d'un utilisateur"
+            />
+            <button className="btn btn-primary" type="submit">
+             🔎
+            </button>
+             </form>
+            <p className='sizeHouse'>Taille de la maison : {sizeHouse}</p>
+            <p className='nbPersonne'>Nombre de personnes dans la maison : {nbPerson}</p>
+            <p className='country'>Pays : {country}</p>
+            </div>
         </div>
     );
 

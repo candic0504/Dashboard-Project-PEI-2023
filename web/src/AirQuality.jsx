@@ -19,7 +19,7 @@ function AirQualityWidget() {
         setLoading(true);
         setError(null);
         try {
-            const apiKey = '24449f0a4e464c07a13eb6f90a17746a'; // Remplacez par votre clé API OpenCage
+            const apiKey = '24449f0a4e464c07a13eb6f90a17746a'; 
             const response = await axios.get(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(address)}&key=${apiKey}`);
             if (response.data && response.data.results && response.data.results.length > 0) {
                 const { lat, lng } = response.data.results[0].geometry;
@@ -47,11 +47,11 @@ function AirQualityWidget() {
     };
 
     return (
-        <div className="container">
-                    <div className='air-container d-flex flex-column justify-items-center'>
-                        <div className='d-flex justify-content-between'>
+        <div className="air-container">
+                    <div className='air-container2 d-flex flex-column justify-items-center'>
+                        <div className='adresse2'>
                             <input className="form-control adresse" type="text" value={address} onChange={handleAddressChange} placeholder="Entrez une adresse" />
-                            <button className='btn btn-primary verif' onClick={handleGeocode}> 🔎</button>
+                            <button className='btn btn-primary verif can' onClick={handleGeocode}> 🔎</button>
                         </div>
                             <h3 className="exemple">Exemple : 7 rue du Pavillon, Triel sur Seine</h3>
                             {loading && <p>Chargement...</p>}
