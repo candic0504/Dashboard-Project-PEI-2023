@@ -2,6 +2,12 @@
   margin-top: -2rem;
 }
 
+.titre4{
+
+  text-align: center;
+  color: #ffffff;
+}
+
   .air-container2 {
 
     border-radius: 30px;
@@ -40,17 +46,17 @@
   
 
   .indicateur {
-    margin-left: 0.5rem;
+    
     font-size: 1rem; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #FFF59A;
+    color: #272626;
     
   }
   
 
   .pm2,
   .pm10 {
-    margin-left: 0.5rem;
+    
     color: #FFF59A;
     font-size: 1rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

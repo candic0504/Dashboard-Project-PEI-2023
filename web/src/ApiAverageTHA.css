@@ -1,5 +1,5 @@
 .widget-measures{
-    background-color:#D9D9D9;
+    background-color:rgba(255, 245, 154, 1);
     padding: 1rem;
     border-radius: 30px;
     height: 15rem;
@@ -14,7 +14,7 @@
 }
 
 .form-select.form-select-lg.mb-3.menudr{
-    width: 30rem;
+    width: 25rem;
     margin-top: 2rem;
 
 }
@@ -23,8 +23,9 @@
     color: #494848;
     font-size: 100px;
     font-weight: bold;
-    margin-left: 60rem;
-    margin-top: -9.5rem;
+    text-align: right;
+    margin-top: -7rem;
+   
 }
 
 .text-average {
@@ -32,7 +33,36 @@
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-left: 34rem;
-    margin-top: -5.5rem;
+    text-align: center;
+    margin-top: -4rem;
 
 }
+
+@media (max-width: 768px) {
+    .widget-measures {
+      padding: 0.5rem;
+      height: auto; 
+    }
+  
+    .widget-header {
+      margin-left: 0.5rem;
+      margin-top: 1rem;
+    }
+  
+    .form-select.form-select-lg.mb-3.menudr {
+      width: auto; 
+      margin-top: 1rem;
+    }
+  
+    .value-average {
+      font-size: 5vw; 
+      margin-top: 0;
+      text-align: center;
+    }
+  
+    .text-average {
+      font-size: 4vw; 
+      margin-top: 1rem; 
+    }
+  }
+  

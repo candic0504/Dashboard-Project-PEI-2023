@@ -36,9 +36,10 @@ root.render(
       <Route path="/" element={
         <>
           {}
-          <div className="container">
+          <h1 className="TitreDash"> Dashboard P.E.IoT </h1>
+          <div className="container contour">
             <div className="row">
-              <div className="col-lg-5 col-md-12 col-sm-12 mx-auto" style={{ margin: '0.125rem', gap: '1rem' }}>
+            <div className="col-lg-5 col-md-12 col-sm-12 mx-auto" style={{ margin: '0.125rem', gap: '1rem'}}>
                 <Apid/>
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 mx-auto" style={{ margin: '2.125rem', gap: '1rem' }}>

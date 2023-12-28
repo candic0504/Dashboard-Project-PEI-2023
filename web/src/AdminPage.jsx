@@ -76,6 +76,30 @@ function AdminPage() {
         }
     };
     
+    const renderDataTable = (data) => {
+        if (!data || data.length === 0) {
+          return <p>Aucune donnée disponible.</p>;
+        }
+    
+        const headers = Object.keys(data[0]);
+    
+        return (
+          <table>
+            <thead>
+              <tr>
+                {headers.map(header => <th key={header}>{header}</th>)}
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((item, index) => (
+                <tr key={index}>
+                  {headers.map(header => <td key={`${index}-${header}`}>{item[header]}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        );
+      };
 
     return (
         <div className="container-fluid admin-background">
@@ -122,13 +146,13 @@ function AdminPage() {
                 </form>
             </div>
             <div className="row justify-content-center mt-3">
-                <input className='form-control col-md-4' type="text" placeholder="ID à supprimer" value={idToDelete} onChange={e => setIdToDelete(e.target.value)} />
+                <input className='IDbtn' type="text" placeholder="Rentrer un ID que vous voulez supprimer" value={idToDelete} onChange={e => setIdToDelete(e.target.value)} />
                 <button onClick={handleDelete} className="btn btn-danger btn btn-danger ml-3">Supprimer Donnée</button>
             </div>
 
             <div className="row justify-content-center mt-3">
                 <button onClick={handleAccessData} className="btn btn-info btn-lg">Accéder aux Données</button>
-                {dataAccessed && <div>{/* ... affichage des données ... */}</div>}
+                {dataAccessed && renderDataTable(dataAccessed)}
             </div>
         </div>
     );

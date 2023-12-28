@@ -49,6 +49,7 @@ function AirQualityWidget() {
     return (
         <div className="air-container">
                     <div className='air-container2 d-flex flex-column justify-items-center'>
+                        <h1 className='titre4'> Pollution de l'air</h1>
                         <div className='adresse2'>
                             <input className="form-control adresse" type="text" value={address} onChange={handleAddressChange} placeholder="Entrez une adresse" />
                             <button className='btn btn-primary verif can' onClick={handleGeocode}> 🔎</button>

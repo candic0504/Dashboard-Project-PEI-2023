@@ -19,12 +19,18 @@ function ApiAverageTHA() {
     }, [selectedMeasure]);
 
     const calculateAverage = (data) => {
-        const sum = data.reduce((acc, item) => acc + item.value, 0);
-        return data.length > 0 ? (sum / data.length).toFixed(2) : 0;
-    };
+    console.log('Données filtrées:', data); 
+    const sum = data.reduce((acc, item) => {
+        console.log('Accumulateur:', acc, 'Valeur actuelle:', item.value); 
+        return acc + Number(item.value); 
+    }, 0);
+    const average = data.length > 0 ? (sum / data.length).toFixed(2) : 0;
+    console.log('Moyenne calculée:', average); 
+    return average;
+};
 
     return (
-            <div className='container'>
+            <div className='container-average'>
                  <div className="widget-measures">
                     <h1 className="widget-header">Moyennes des Mesures</h1>
                     <select className="form-select form-select-lg mb-3 menudr" onChange={(e) => setSelectedMeasure(e.target.value)}>
@@ -35,12 +41,14 @@ function ApiAverageTHA() {
                     </select>
 
                    {selectedMeasure && <div className="average">
+                   <div className="text-average">
+                        La Moyenne de {selectedMeasure} est
+                    </div>
+
                     <div className="value-average">
-                    {averageValue}
+                        {averageValue}
                     </div>
-                    <div className="text-average">
-                     La Moyenne de {selectedMeasure} est
-                    </div>
+                    
                </div>}
            </div>
         </div>          
