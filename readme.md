@@ -93,3 +93,23 @@ Une maquette du Dashboard a été réalisé sur Figma afin de réfléchir à la 
 ## Usages
 
 Ce projet s'adapte sur PC, tablette et mobile.
+
+## Versions
+
+# **WEB**
+
+- Axios 1.6.3
+- Bootsrap 5.3.2
+- Chart.js 4.4.1
+- Chartjs-adapter-date-fns 3.0.0
+- React 18.2.0
+- React-chartjs-2 5.2.0
+- React-dom 18.2.0
+- React-router-dom 6.21.1
+
+# **SERVER**
+
+- CORS 2.8.5
+- Express 5.0.0 - alpha.8
+- Mongodb 6.3.0
+- Mongoose 8.0.3
