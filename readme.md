@@ -54,17 +54,17 @@ Ce propose repose sur une API REST qui permet d’accéder aux données mises en
 
 ### **Page Accueil**
 
-   1. Weather Widget, ce widget a été implémenté à l'aide d'API existante [OpenWeather](https://openweathermap.org/api). Ce widget affiche la température et le taux d'humidité d'un pays sélectionner. Le fond du widget change de couleur en fonction de la température.
-   1. User Widget, ce widget permet d'accéder à la taille de la maison, du nombre de personne dans cette maison ainsi que le pays du user que nous sélectionnons. L'utilisateur doit rentrer l'ID d'un utilisateur afin d'accéder à ces informations. Nous pouvons retrouver les différents ID de user dans la base de données directement.
+   1. **Weather Widget**, ce widget a été implémenté à l'aide d'API existante [OpenWeather](https://openweathermap.org/api). Ce widget affiche la température et le taux d'humidité d'un pays sélectionner. Le fond du widget change de couleur en fonction de la température.
+   1. **User Widget**, ce widget permet d'accéder à la taille de la maison, du nombre de personne dans cette maison ainsi que le pays du user que nous sélectionnons. L'utilisateur doit rentrer l'ID d'un utilisateur afin d'accéder à ces informations. Nous pouvons retrouver les différents ID de user dans la base de données directement.
    *Ce widget utilise les données de la BDD.*
-   1. AirQuality Widget, il s'agit également d'un widget qui utilise l'API OpenWeather. Il indique, en fonction d'une adresse géographique, si l'air est pollué ou nous. 
-   1. Sensor Localisation Widget, ce widget permet de connaître la moyenne de nombre de capteur en fonction de la pièce sélectionner. 
+   1. **AirQuality Widget**, il s'agit également d'un widget qui utilise l'API OpenWeather. Il indique, en fonction d'une adresse géographique, si l'air est pollué ou nous. 
+   1. **Sensor Localisation Widget**, ce widget permet de connaître la moyenne de nombre de capteur en fonction de la pièce sélectionner. 
    *Ce widget utilise les données de la BDD.*
-   1. Average Widget, il permet de connaître la valeur moyenne de la température, humidité et pollution de l'air de tous les capteurs. 
+   1. **Average Widget**, il permet de connaître la valeur moyenne de la température, humidité et pollution de l'air de tous les capteurs. 
    *Ce widget utilise les données de la BDD.*
-   1. Sensor Per Year Widget, ce widget permet de savoir combien de capteurs ont été achetés chaque années.
+   1. **Sensor Per Year Widget**, ce widget permet de savoir combien de capteurs ont été achetés chaque années.
    *Ce widget utilise les données de la BDD.*
-   1. Graphique Widget, il s'agit d'un graphique qui représente les valeurs récoltées sur la température, humidité et pollution de l'air d'un même capteur. Pour cela il est nécessaire de renter l'ID d'un capteur.
+   1. **Graphique Widget**, il s'agit d'un graphique qui représente les valeurs récoltées sur la température, humidité et pollution de l'air d'un même capteur. Pour cela il est nécessaire de renter l'ID d'un capteur.
    *Ce widget utilise les données de la BDD.*
 
 Cette page présente un bouton qui permet d'accéder à la page Admin.
