@@ -89,6 +89,8 @@ Afin de réaliser au mieux notre projet d'équipe nous avons utilisé Trello afi
 Une maquette du Dashboard a été réalisé sur Figma afin de réfléchir à la fois à l'expérience utilisateur (UX) et à l’interface utilisateur.
 *Voire notre [Figma](https://www.figma.com/file/0iyKRcxl6SC1DxS4V1JtF7/Prototype-Tech-Web?type=design&node-id=1%3A2&mode=design&t=0gSPIYWpUlXoCwbk-1).*
 
+Vous pouvez retrouver notre vidéo de présentation de notre dashboard avec ce lien youtube : *Voire la video [youtube](https://youtu.be/gDCfefizPrY).*
+
 ## Usages
 
 Ce projet s'adapte sur PC, tablette et mobile.
