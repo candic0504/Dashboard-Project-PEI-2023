@@ -1,4 +1,4 @@
-// Apid.stories.jsx
+
 import React from 'react';
 import Apid from './APID';
 

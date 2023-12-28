@@ -1,4 +1,4 @@
-// SensorWidget.stories.jsx
+
 import React from 'react';
 import SensorWidget from './Sensor_Per_Year';
 

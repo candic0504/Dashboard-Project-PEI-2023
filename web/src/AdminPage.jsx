@@ -31,7 +31,7 @@ function AdminPage() {
             console.log("données ajoutées");
         } catch (error) {
             console.error('Erreur lors de la création du document', error);
-            // Gérez l'erreur ici
+           
         }
     };
 

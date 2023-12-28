@@ -1,4 +1,4 @@
-// ApiAverageTHA.stories.jsx
+
 import React from 'react';
 import ApiAverageTHA from './ApiAverageTHA';
 

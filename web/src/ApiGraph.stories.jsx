@@ -1,4 +1,4 @@
-// ApiGraph.stories.jsx
+
 import React from 'react';
 import ApiGraph from './ApiGraph';
 
