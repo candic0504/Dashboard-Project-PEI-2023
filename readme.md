@@ -1,6 +1,5 @@
 # Dashboard Project PEI 2023
-Paul Mayaud
-Candice Legay
+Paul Mayaud - Candice Legay
 
 ## Description
 
@@ -85,7 +84,7 @@ Cette page présente un bouton qui permet de retourner sur la page d'accueil.
 ## Organisation
 
 Afin de réaliser au mieux notre projet d'équipe nous avons utilisé Trello afin de se répartir les tâches et de suivre en continue l'évolution de notre projet. 
-*Voir notre [Trello](https://openweathermap.org/api).*
+*Voir notre [Trello](https://trello.com/invite/b/M86vdpzI/ATTIc2bd829423e4bc87dc58be34f03e590628921D5C/projet-techweb).*
 
 Une maquette du Dashboard a été réalisé sur Figma afin de réfléchir à la fois à l'expérience utilisateur (UX) et à l’interface utilisateur.
 *Voire notre [Figma](https://www.figma.com/file/0iyKRcxl6SC1DxS4V1JtF7/Prototype-Tech-Web?type=design&node-id=1%3A2&mode=design&t=0gSPIYWpUlXoCwbk-1).*
