@@ -1,5 +1,5 @@
 import React from 'react';
-import WeatherWidget from './Apid.jsx';
+import Apid from `./Apid.jsx`;
 import './Apid.css';
 
 export default {

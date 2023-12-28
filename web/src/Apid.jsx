@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import './ApiD.css'; 
+import './Apid.css'; 
 
-const ApiD = () => {
+const Apid = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [selectedPays, setSelectedPays] = useState('Ethiopia'); // Pays par défaut
   const [isLoading, setIsLoading] = useState(true);
@@ -76,5 +76,5 @@ const ApiD = () => {
   );
 };
 
-export default ApiD;
+export default Apid;
 
