@@ -17,9 +17,9 @@ Projet réalisé par des étudiants à l'ECE Paris, M1 Product Engineer and Inno
 
 ## Installation
 
-Afin de'accéder à ce dashboard il est nécessaire d'installer Node.js en cliquant [ici].
+Afin de'accéder à ce dashboard il est nécessaire d'installer Node.js en cliquant [ici](https://nodejs.org/en).
 
-Il vous faudra également vous créer un compte sur MongoDB afin d'accéder à la base de données, il vous suffit de suivre ce [lien].
+Il vous faudra également vous créer un compte sur MongoDB afin d'accéder à la base de données, il vous suffit de suivre ce [lien](https://www.mongodb.com/fr-fr/cloud/atlas/register).
 
 ## Getting Started
 
@@ -54,7 +54,7 @@ Ce propose repose sur une API REST qui permet d’accéder aux données mises en
 
 ### **Page Accueil**
 
-   1. Weather Widget, ce widget a été implémenté à l'aide d'API existante [OpenWeather]. Ce widget affiche la température et le taux d'humidité d'un pays sélectionner. Le fond du widget change de couleur en fonction de la température.
+   1. Weather Widget, ce widget a été implémenté à l'aide d'API existante [OpenWeather](https://openweathermap.org/api). Ce widget affiche la température et le taux d'humidité d'un pays sélectionner. Le fond du widget change de couleur en fonction de la température.
    1. User Widget, ce widget permet d'accéder à la taille de la maison, du nombre de personne dans cette maison ainsi que le pays du user que nous sélectionnons. L'utilisateur doit rentrer l'ID d'un utilisateur afin d'accéder à ces informations. Nous pouvons retrouver les différents ID de user dans la base de données directement.
    *Ce widget utilise les données de la BDD.*
    1. AirQuality Widget, il s'agit également d'un widget qui utilise l'API OpenWeather. Il indique, en fonction d'une adresse géographique, si l'air est pollué ou nous. 
@@ -85,10 +85,10 @@ Cette page présente un bouton qui permet de retourner sur la page d'accueil.
 ## Organisation
 
 Afin de réaliser au mieux notre projet d'équipe nous avons utilisé Trello afin de se répartir les tâches et de suivre en continue l'évolution de notre projet. 
-*Voir notre [Trello].*
+*Voir notre [Trello](https://openweathermap.org/api).*
 
 Une maquette du Dashboard a été réalisé sur Figma afin de réfléchir à la fois à l'expérience utilisateur (UX) et à l’interface utilisateur.
-*Voire notre [Figma].*
+*Voire notre [Figma](https://www.figma.com/file/0iyKRcxl6SC1DxS4V1JtF7/Prototype-Tech-Web?type=design&node-id=1%3A2&mode=design&t=0gSPIYWpUlXoCwbk-1).*
 
 ## Usages
 
