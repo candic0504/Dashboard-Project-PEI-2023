@@ -96,7 +96,7 @@ Ce projet s'adapte sur PC, tablette et mobile.
 
 ## Versions
 
-# **WEB**
+### **WEB**
 
 - Axios 1.6.3
 - Bootsrap 5.3.2
@@ -107,7 +107,7 @@ Ce projet s'adapte sur PC, tablette et mobile.
 - React-dom 18.2.0
 - React-router-dom 6.21.1
 
-# **SERVER**
+### **SERVER**
 
 - CORS 2.8.5
 - Express 5.0.0 - alpha.8
