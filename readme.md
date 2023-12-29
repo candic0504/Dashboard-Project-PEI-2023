@@ -81,6 +81,9 @@ La page Admin permet de gérer notre base de données. La gestion de la base de 
 
 Cette page présente un bouton qui permet de retourner sur la page d'accueil.
 
+Pour une visualisation du Dashboard, une vidéo de présentation est disponible [**ici**](https://www.youtube.com/watch?v=gDCfefizPrY).
+
+
 ## Organisation
 
 Afin de réaliser au mieux notre projet d'équipe nous avons utilisé Trello afin de se répartir les tâches et de suivre en continue l'évolution de notre projet. 
