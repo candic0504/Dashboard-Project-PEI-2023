@@ -81,7 +81,7 @@ La page Admin permet de gérer notre base de données. La gestion de la base de 
 
 Cette page présente un bouton qui permet de retourner sur la page d'accueil.
 
-Pour une visualisation du Dashboard, une vidéo de présentation est disponible [ici](https://www.youtube.com/watch?v=gDCfefizPrY).
+Pour une visualisation du Dashboard, une vidéo de présentation est disponible [https://www.youtube.com/watch?v=gDCfefizPrY].
 
 
 ## Organisation
